@@ -15,7 +15,8 @@ public class OffHandler implements ActionHandler {
 
     @Override
     public boolean handle(JSONArray args, CallbackContext callbackContext) {
-        String id = args.optString(0);
+        String path = args.optString(0);
+        String id = args.optString(1);
 
         Log.d(FirebaseRealtimePlugin.TAG, "OffHandler: remove listener");
 
